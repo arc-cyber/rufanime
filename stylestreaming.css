@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes left {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes top {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body{
+    background: black no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-logo h1{
+    font-size: 35px;
+    color: orange;
+}
+
+.navbar .navbar-logo .tec{
+    color: white;
+    font-size: 20px;
+
+}
+
+.navbar .navbar-search input{
+  width: 400px;
+  height: 30px;
+  float: right;
+  border: none;
+  margin-top: 5px;
+  margin-right: 5px;
+  position: absolute;
+  left: 35%;
+  top: 30px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.navbar ul{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+
+.navbar ul li{
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: grey;
+    transition: 0.3 ease;
+}
+
+.navbar ul li a:hover{
+    color: orange;
+}
+
+h1{
+    padding: 15px;
+    font-size: 20px;
+}
+
+.dataproduct img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.content h5{
+    font-size: 15px;
+    padding: 20px 0px 10px;
+}
+
+.product-left1{
+    animation: left 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+
+.product-left2{
+    animation: top 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 400px;
+}
+
+.product-right1{
+    animation: bottom 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 110px;
+    left:700px;
+}
+
+.product-right2{
+    animation: right 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 1000px;
+}
+
+.product-leftbottom1{
+    animation: top 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+.product-leftbottom2{
+    animation: bottom 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 670px;
+    left: 400px;
+}
+
+.product-rightbottom1{
+    animation: right 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 580px;
+    left: 700px;
+}
+
+.product-rightbottom2{
+    animation: bottom 2.5s ease-out forwards;
+    width: 250px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 550px;
+    left: 1000px;
+}
+
+.tombol{
+    width: 40%;
+    height: 25px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600px;
+}
+
+.subscribe{
+    padding: 20px;
+}

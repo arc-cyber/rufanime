@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url(photoprofilebg.png);
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*--transition--*/
+@keyframes right {
+  from {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes transparant {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  from {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes top {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*--transition end--*/
+
+/*--navbar--*/
+.navbar{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-logo h1{
+    font-size: 35px;
+    color: #FFD700;
+}
+
+.navbar .navbar-logo .tec{
+    color: white;
+    font-size: 20px;
+
+}
+
+.navbar ul{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+
+.navbar ul li{
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: grey;
+    transition: 0.3 ease;
+}
+
+.navbar ul li a:hover{
+    color: black;
+}
+/*--navbar end--*/
+
+/*--content--*/
+.intro{
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 55%;
+}
+
+.intro img{
+    animation: transparant 1.5s ease-out forwards;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10%;
+}
+
+.intro h1{
+    animation: bottom 1.5s ease-out forwards;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.intro .p1{
+    animation: top 1.5s ease-out forwards;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.intro p{
+    animation: right 1.5s ease-out forwards;
+    font-size: 15px;
+}
+
+.contact{
+    padding-left: 50px;
+    padding-top: 30px;
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+}
+
+.link button{
+    width: 190%;
+    height: 30px;
+    background: transparent;
+    border: 3px solid rgb(10, 75, 10);
+    outline: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    transition: 0.3 ease;
+}
+
+.link1 button{
+    width: 190%;
+    height: 30px;
+    background: transparent;
+    border: 3px solid rgb(75, 10, 59);
+    outline: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+}
+
+.link2 button{
+    width: 250%;
+    height: 30px;
+    background: transparent;
+    border: 3px solid rgb(20, 10, 75);
+    outline: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+}
+
+.link3 button{
+    width: 330%;
+    height: 30px;
+    background: transparent;
+    border: 3px solid rgb(75, 10, 10);
+    outline: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+}
+/*--content end--*/
